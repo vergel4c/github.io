@@ -8,6 +8,7 @@
     rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <style>
 
@@ -23,7 +24,8 @@
     
     body {
       text-align: center;
-      background-color: white
+      background-color: white;
+      height: 100vh;
     
   
     }
@@ -33,8 +35,21 @@
   
   }
   
+  .form-example {
+
+text-align:center;
+width: 40%;
+}
 
 
+#formdiv {
+
+
+margin: 0px;
+background-color: rgb(250, 250, 250);
+
+
+}
 
   
 
@@ -100,85 +115,61 @@
           </div>
       </div>
   </div>
-</nav><br><br>  
-<div class="container" style="height:90vh;display:flex;justify-content:center;align-items:center" >
-  <form style="height:500px; width: 500px;; min-height:500px; background-color: rgb(252, 252, 240); border-radius: 1rem; box-shadow: 0px 0px 8px 5px rgb(240, 240, 218);"
-   action="" method="post" id="formLogin">
+</nav><br><br>
 
-        <div class="login-form-container">
-          <br><h1>Login</h1><br>
-          <div class="field-column">
-            <div>
-              <label for="email">Email</label>
-              <span id="user_info" class="error-info"></span>
-            </div>
-            <div>
-              <input style="font-family:Verdana, Geneva, Tahoma, sans-serif" name="email" id="email" type="email" class="demo-input-box login" placeholder="Enter Email">
-            </div>
-          </div>
-          <div class="field-column">
-            <div>
-              <br><label for="password">Password</label><span id="password_info"
-                class="error-info"></span>
-            </div>
-            <div>
-              <input style="font-family:Verdana, Geneva, Tahoma, sans-serif" name="password" id="password" type="password" class="demo-input-box login" placeholder="Enter Password">
-            </div>
-          </div>
-          <div class=field-column>
-            <div>
-              <br><input type="submit" name="login" value="Login" class="btn btn-primary btn-lg" onclick="alert('Login Successful')">
-            </div>
-          </div>
-          <div class="form-nav-row">
-          <br><a href="#" class="form-link text-primary">Forgot password?</a>
-          </div>
-          <div class="login-row form-nav-row">
-            <p>New user?</p>
-            <a href="signup.html" class="btn form-link text-primary">Signup Here</a>
-          </div>
-        </div>
-  </form>
-  </div>
+
+
+<div class="row h-100 justify-content-center align-items-center">
+
+  <!-- Form -->
 
   
-<footer class="bg-light text-center text-lg-start">
-    
-<div class="text-center p-3" style="background-color: beige">
-  <section class="newsletter">
-    <div class="container">
+   <form class="form-example" action="" method="post" style="background-color: white; height: 600px; box-shadow: 0px 0px 8px 5px rgb(218, 213, 213); border-radius: 1rem;">
+    <br><br><h2 class="text-dark">Sign Up</h2>
       <div class="row">
-        <div class="col-sm-" style="padding-left: 450px; width: 70%;">
-          <div class="content">
-            <h2 style="padding-right: 25px;">Subscribed to Our Newsletter</h2>
-              <div class="input-group">
-                <input type="email" class="form-control" name="" placeholder="Enter your Email" style="width: 30%;">
-                  </div>
-                    <span class="input-group-btn">
-                    <button class="btn bg-primary w-50 m-3"type="submit">Submit</button>
-                    </span>
-                  </div>
-              </div>
-          </div>
-        </div>  
+      <div class="col-6">
+        <label class="my-1 form-label text-dark " for="fname">First Name</label>
+        <input class="form-control contact-us" type="text" id="firstName" name="firstName" placeholder="Your name..">
     </div>
-  </section>
-<div>
-  
-  <div class="text-center p-3" style="background-color: beige">
-    © 2022 Copyright: Companero All Rights Reserved
+    <div class="col-6">
+        <label class="my-1  form-label text-dark" for="lname">Last Name</label>
+        <input class="form-control contact-us" type="text" id="lastName" name="lastName" placeholder="Your last name..">
+    </div>
+    <div class="col-12">
+        <label class="my-1 form-label text-dark" for="lname">Email Address</label>
+        <input class="form-control contact-us" type="email" id="email" name="email" placeholder="Your email address.." >
+    </div>
+    <div class="col-12">
+        <label class="my-1 form-label text-dark" for="password">Password</label>
+        <input class="form-control contact-us" type="password" id="password" name="password">
+    </div>
+    <div class="col-12">
+        <label class="my-1 form-label text-dark" for="password">Confirm Password</label>
+        <input class="form-control contact-us" type="password" id="confirmpassword" name="confirmpassword"><br>
+    </div>
+    <div class="form-check d-flex justify-content-center mb-5">
+        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+        <label class="form-check-label" for="form2Example3g">
+        I agree that I am 18 years old and agree to the <br> <a href="#!" class="text-body"><u>Terms of service</u></a> and <a href="#!" class="text-body"><u>Privacy Policy</u></a>
+      </label>
+    </div>
   </div>
+    <div>
+      <button type="submit" value="Submit" class="btn btn-primary btn-lg w-25" onclick="alert('Contact Form Submitted')">Submit</button>
+    </div>
+  </form>
+  <!-- Form end -->
+  
 
 
-  <div class="text-center p-3" style="background-color: beige">
-    <a href="https://www.facebook.com/thebestcondoguyph"><img src="facebook_logo.png" width="50px"></a>
-    <a href="https://www.instagram.com/bestcondoguyph/?hl=en"><img src="Instagram.png" width="30px" height="30px"></a>
-    <a href="https://www.linkedin.com/in/vergel-brondial-462726180/"><img src="Linkedin.png" width="40px" height="30px" style="padding-left: 10px;"></a>
-    <a href="https://twitter.com/VergeBrondial"><img src="Twitter.jpg" width="45px" height="40px" style="padding-left: 10px;"></a>
 </div>
-  </footer>
+
+
 </header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
